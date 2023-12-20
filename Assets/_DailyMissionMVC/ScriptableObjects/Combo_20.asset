@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Reach the target on the combo meter.
   goal: 10
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  rewardAmount: 150
+  rewardType: Coins

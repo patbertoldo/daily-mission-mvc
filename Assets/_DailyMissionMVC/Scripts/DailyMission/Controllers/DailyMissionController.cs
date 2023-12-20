@@ -24,6 +24,11 @@ namespace DailyMission.Controllers
             dailyMissionModel = model as DailyMissionModel;
             dailyMissionView = view as DailyMissionView;
 
+            SetNewMissions();
+        }
+
+        private void SetNewMissions()
+        {
             while (activeDailyMissions.Count < maximumMissionCount)
             {
                 SelectNewMission();
@@ -58,6 +63,14 @@ namespace DailyMission.Controllers
 
             // Save as selected
             dailyMissionModel.SaveMission(activeDailyMissions.Count - 1, newActiveMission);
+        }
+
+        // UI Event
+        public void ResetMissions()
+        {
+            activeDailyMissions.Clear();
+
+            SetNewMissions();
         }
     }
 }

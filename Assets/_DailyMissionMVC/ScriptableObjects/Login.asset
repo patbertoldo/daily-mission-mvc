@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Login to the game.
   goal: 1
-  icon: {fileID: 0}
+  rewardAmount: 25
+  rewardType: Coins
