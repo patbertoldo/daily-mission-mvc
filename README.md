@@ -13,7 +13,7 @@ Progress (night 2):
 * Application feeds the Model and View to the Controller.
 * Controller can select 3 different missions at random and update the view.
 * Missions are saved when selected.
-* Setup the UI for the view.
+* Setup the UI for the View.
 
 Features to be done:
 * Load the missions from the previous session.
@@ -23,7 +23,7 @@ Features to be done:
 
 Things I would change:
 * Calling the project "Daily Missions" is a bit confusing with the namespacing, as Daily Missions is really a feature for a wider project.
-* I'm not sure how views in this pattern normally get updated, so I'm just passing in an object to be cast inside the view.
+* I'm not sure how Views in this pattern normally get updated, so I'm just passing in an object to be cast inside the View.
 
 Things I have learned:
 MVC is an interesting pattern to follow in Unity. I can see that Application script holds all the power for starting each controller and passes them their dependencies, which is great.
