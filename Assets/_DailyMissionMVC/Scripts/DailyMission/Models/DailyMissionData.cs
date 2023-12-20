@@ -17,10 +17,6 @@ namespace DailyMission.Models
         private int goal = 1;
         public int Goal => goal;
 
-        [SerializeField]
-        private Sprite icon;
-        public Sprite Icon => icon;
-
         public int Progress { get; set; }
         
         /// <summary>

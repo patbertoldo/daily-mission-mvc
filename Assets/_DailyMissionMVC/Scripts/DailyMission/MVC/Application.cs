@@ -13,5 +13,13 @@ namespace DailyMission.MVC
         public Model Model => model;
         public Controller Controller => controller;
         public View View => view;
+
+        public void Awake()
+        {
+            // Intro to the application
+
+            // Initialise controllers
+            controller.DailyMissionController.Initialise(model.DailyMissionModel, view.DailyMissionView);
+        }
     }
 }

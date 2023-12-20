@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e8dbc719e39ed45964a2a28d782da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dailyMissionView: {fileID: 1978318001}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1978317999}
   - component: {fileID: 1978318000}
+  - component: {fileID: 1978318001}
   m_Layer: 0
   m_Name: DailyMissionView
   m_TagString: Untagged
@@ -695,6 +697,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978317998}
   m_CullTransparentMesh: 1
+--- !u!114 &1978318001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978317998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ab4907dff919a41bf1829c8f130c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionSlots: []
 --- !u!1 &2024659521
 GameObject:
   m_ObjectHideFlags: 0
