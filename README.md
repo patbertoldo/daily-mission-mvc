@@ -19,7 +19,12 @@ Features to be done:
 * Load the missions from the previous session.
 * Add a timer so that the missions reset in a 24 hour window.
 * Add access to the controller so the mission progress can be triggered.
+* Unit tests: validate Serialized Objects have the data they need; send test data through the UpdateView() function; test loading and saving; test getting new missions.
 
 Things I would change:
 * Calling the project "Daily Missions" is a bit confusing with the namespacing, as Daily Missions is really a feature for a wider project.
 * I'm not sure how views in this pattern normally get updated, so I'm just passing in an object to be cast inside the view.
+
+Things I have learned:
+MVC is an interesting pattern to follow in Unity. I can see that Application script holds all the power for starting each controller and passes them their dependencies, which is great.
+It seems to force a level of abstraction and use of interfaces, Single Responsibility principle - which we love.
