@@ -27,9 +27,11 @@ namespace DailyMission.Models
         public bool IsComplete => Progress >= goal;
 
         // Making rewards basic for the simplicity of the example, rewards should have their own dedicated system.
+        [SerializeField]
         private int rewardAmount;
         public int RewardAmount => rewardAmount;
 
+        [SerializeField]
         private string rewardType;
         public string RewardType => rewardType;
 

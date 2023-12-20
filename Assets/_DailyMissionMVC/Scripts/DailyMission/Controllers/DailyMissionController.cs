@@ -22,13 +22,14 @@ namespace DailyMission.Controllers
         public void Initialise(IModel model, IView view)
         {
             dailyMissionModel = model as DailyMissionModel;
+            dailyMissionView = view as DailyMissionView;
 
             while (activeDailyMissions.Count < maximumMissionCount)
             {
                 SelectNewMission();
             }
 
-            dailyMissionView.UpdateView(activeDailyMissions);
+            dailyMissionView.UpdateView(activeDailyMissions.ToArray());
         }
 
         private void SelectNewMission()

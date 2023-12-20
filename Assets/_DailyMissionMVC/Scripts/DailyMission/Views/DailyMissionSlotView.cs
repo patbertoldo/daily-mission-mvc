@@ -9,11 +9,13 @@ namespace DailyMission.Views
     {
         [SerializeField] Text descriptionText;
         [SerializeField] Text progressText;
+        [SerializeField] Text rewardText;
 
-        public void Initialise(string description, int progress, int goal)
+        public void Initialise(string description, int progress, int goal, int rewardAmount, string rewardType)
         {
             descriptionText.text = description;
             progressText.text = $"Progress: {progress}/{goal}";
+            rewardText.text = $"{rewardAmount.ToString()} {rewardType}";
         }
     }
 }

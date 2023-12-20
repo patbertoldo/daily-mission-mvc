@@ -15,7 +15,7 @@ namespace DailyMission.Views
 
             for (int i = 0; i < missions.Length; i++)
             {
-                missionSlots[i].Initialise(missions[i].Description, missions[i].Progress, missions[i].Goal);
+                missionSlots[i].Initialise(missions[i].Description, missions[i].Progress, missions[i].Goal, missions[i].RewardAmount, missions[i].RewardType);
             }
         }
     }
